@@ -9,7 +9,7 @@ This fantastic view changes its color gradually makes your app look fantastic!
  
   s.homepage         = 'https://github.com/kjayathilake/FantasticView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '<YOUR NAME HERE>' => '<YOUR EMAIL HERE>' }
+  s.author           = { 'Krishantha Jayathilake' => 'krishanthajayathilake@gmail.com' }
   s.source           = { :git => 'https://github.com/kjayathilake/FantasticView.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '10.0'
