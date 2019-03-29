@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "Running sonarqube analysis"
 PROPERTIES="${XCS_SOURCE_DIR}/Test/sonar-project.properties"
-INFOPLIST="${XCS_SOURCE_DIR}/Test/Writer/Info.plist"
+INFOPLIST="${XCS_SOURCE_DIR}/Test/FantasticView/Info.plist"
 buildNumber=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $INFOPLIST)
 buildVersion=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $INFOPLIST)
 
@@ -12,4 +12,5 @@ then
 	echo "sonar.password=$3" >> $PROPERTIES
 fi
 echo "sonar.projectVersion=$buildVersion.$buildNumber.${XCS_INTEGRATION_NUMBER}" >> $PROPERTIES
+whoami
 sh "run-sonar-swift.sh"

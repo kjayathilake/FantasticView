@@ -173,6 +173,7 @@ done
 echo "Running run-sonar-swift.sh..."
 
 ## CHECK PREREQUISITES
+whoami
 
 # sonar-project.properties in current directory
 if [ ! -f sonar-project.properties ]; then
