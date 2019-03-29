@@ -142,7 +142,7 @@ function runCommand() {
 
 ## COMMAND LINE OPTIONS
 vflag="off"
-nflag="on"
+nflag="off"
 unittests="on"
 swiftlint="on"
 tailor="on"
