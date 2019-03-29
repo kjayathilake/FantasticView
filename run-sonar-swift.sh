@@ -141,7 +141,7 @@ function runCommand() {
 }
 
 ## COMMAND LINE OPTIONS
-vflag="on"
+vflag="off"
 nflag="on"
 unittests="on"
 swiftlint="on"
