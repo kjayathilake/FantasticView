@@ -13,5 +13,5 @@ then
 fi
 echo "sonar.projectVersion=$buildVersion.$buildNumber.${XCS_INTEGRATION_NUMBER}" >> $PROPERTIES
 whoami
-xcodebuild
+xcodebuild > xcodebuild.log
 #sh "run-sonar-swift.sh"
